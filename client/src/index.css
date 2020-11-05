@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Muli';
+  src: local('Muli'), url(./fonts/Muli-Light.ttf) format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli';
+  background-color: #CACACA;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #F5F5F5;
+  width: 900px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.left-side {
+  height: 100%;
+  width: 45%;
+  border-left: 10px solid #fff;
+}
+
+.left-side img {
+  height: 100%;
+  width: 100%;
+}
+
+.right-side {
+  padding: 2rem 2.3rem;
+  height: 100%;
+  width: 55%;
+  border: 10px solid #fff;
+  border-left: none !important;
+}
+
+h2 {
+  color: #BE805E;
+  margin-bottom: 1rem;
+}
+
+form {
+  padding: 1rem;
+}
+
+form label {
+  color: #BE805E;
+  font-size: .9rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: .4rem;
+}
+
+form input {
+  color: #6EA183;
+  font-weight: bold;
+  width: 180px;
+  padding: .5rem;
+  outline: none;
+  font-family: inherit;
+}
+
+
+form select {
+  padding: .5rem;
+  outline: none;
+  color: grey;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+form option {
+  color: grey;
+  font-family: inherit;
+}
+
+.row {
+  margin-bottom: .8rem;
+}
+
+.name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.field-green {
+  color: #6EA183 !important;
+  font-weight: bold;
+  border: 3px solid #B3D3D2;
+}
+
+.field-red {
+  color: #6EA183 !important;
+  font-weight: bold;
+  border: 3px solid #d8b29e;
+}
+
+.field-green-thin {
+  color: #6EA183 !important;
+  border: 1px solid #B3D3D2;
+}
+
+.field-red-thin {
+  color: #6EA183 !important;
+  border: 1px solid #d8b29e;
+}
+
+.field-transperant {
+  color: grey !important;
+  border: none;
+  padding: .7rem !important;
+}
+
+#country {
+  width: 100%;
+}
+
+#day,
+#year{
+  width: 90px;
+}
+
+#month {
+  width: 160px;
+}
+
+#gender {
+  width: 150px;
+}
+
+#email {
+  font-weight: normal !important;
+  height: 39.6px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.submit {
+  background-color: #5CAEC6;
+  color: #fff;
+  padding: .8rem 2.5rem;
+  font-weight: bold;
+  font-family: inherit;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 4px 8px 0px rgba(50, 50, 50, 0.75);
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+.submit:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.submit:hover {
+  background-color: #3d8196;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(97, 93, 122,.6);
+}
+
+.modal-content {
+  position: absolute;
+  top: 200px;
+  height: 200px;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  transform: translateX(-50%);
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
